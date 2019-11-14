@@ -1,0 +1,364 @@
+@font-face {
+  font-family: "Calibri";
+  src: url('../font/Calibri Regular.ttf');
+}
+
+@font-face {
+  font-family: "Calibri";
+  font-weight: bold;
+  src: url('../font/Calibri Bold.TTF');
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url('../font/ProductSans-Regular.ttf');
+}
+
+
+
+.MercuryPanel {
+  background-image: url("mercuryPagePanel.jpg");
+  background-repeat: no-repeat;
+  background-position: center  ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+body {
+  margin : 0;
+}
+
+#titleMercury {
+  z-index:2;
+  color : white;
+  margin-top: 0;
+  padding-top: 4%;
+  padding-left: 5%;
+  margin : 0;
+  font-size: 3em;
+  font-family: Product Sans;
+  font-weight: lighter;
+}
+
+#MercuryDates {
+  z-index: 2;
+  color : white;
+  font-size: 2em;
+  font-family: Product Sans;
+  font-weight: lighter;
+  padding-left: 5%;
+  margin : 0;
+  height: 50%;
+
+}
+
+.Panel {
+  margin : 0;
+  display: flex;
+}
+
+#TellMeMore {
+  border-radius: 10%;
+  margin-left: 85%;
+  width: 100px;
+  height: 60px;
+  background-color: #111427;
+  color : #898a89;
+  border: none;
+  box-shadow : 3px 3px 0px #000812;
+  font-family: Calibri;
+  cursor : pointer;
+  font-size: 0.9em;
+  outline: none;
+}
+
+#TellMeMore:hover {
+  border-radius: 10%;
+  margin-left: 85%;
+  width: 100px;
+  height: 60px;
+  background-color: #898a89;
+  color : #111427 ;
+  border: none;
+  box-shadow : 3px 3px 0px #000812;
+  font-family: Calibri;
+  cursor : pointer;
+  font-size: 0.9em;
+}
+
+#menuderoulant{
+  background-color: white;
+  border : 2px solid #00010d;
+  color : #00010d;
+  width: 150px;
+  border-radius: 10px;
+  justify-content:center;
+  margin-top: 10px;
+  margin-left: 39%;
+  display: none;
+  font-family: Calibri;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+}
+
+#gemini:hover {
+  cursor: pointer;
+  color : #00010d;
+}
+
+#gemini {
+  color : #888;
+}
+
+.containerTellMeMore {
+  width : 120px;
+  height: 100px;
+  padding-left: 75%;
+}
+
+.emptySpace {
+  height: 15%;
+}
+
+.containerIntroductionSentance {
+  margin : 0;
+  width: 100%;
+}
+
+#introductionSentance {
+  font-size: 1.1em;
+  font-family: Calibri;
+  font-weight: lighter;
+  color : white;
+  margin-left: 20px;
+}
+
+#Spacecraft {
+  margin : 0;
+  width : 100%;
+}
+
+.BigTitles {
+  color : white;
+  margin-left: 20px;
+  font-family: Product Sans;
+  font-weight: lighter;
+  font-size: 1.8em;
+  margin-top: 150px;
+}
+
+#BigTitles {
+  color : white;
+  margin-left: 20px;
+  font-family: Product Sans;
+  font-weight: lighter;
+  font-size: 1.8em;
+}
+
+.capsuleContent {
+  color: white;
+  font-family: Calibri;
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 10%;
+  font-size: 1.1em;
+  font-weight: lighter;
+  flex-grow: 2;
+}
+
+.capsule {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+#capsuleimage {
+  width: 450px;
+  height: auto;
+  flex-grow: 1;
+  padding-right: 100px;
+  margin-left: 50px;
+  /*margin-right: 120px;*/
+}
+
+#rocketContent {
+  color : white;
+  font-family: Calibri;
+  font-size: 1.1em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.rocketcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.phraserocket {
+  flex: 100%;
+}
+
+.imagesrockets {
+  display: flex;
+  flex : 100%;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#RedstoneRocket {
+  width: 200px;
+  height: auto;
+  padding-right: 10px;
+}
+
+.PictureCaption {
+  color : white;
+  font-family : Calibri;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.clickableCaption {
+  color :#9d9d9d;
+}
+
+#AtlasRocket {
+  width : 200px;
+  height: auto;
+  padding-left: 10px;
+}
+
+
+.verticalLine {
+  color : #a3a4a5;
+  width: 1px;
+}
+
+.containerMenu {
+  background-color: #00010d;
+  width : 20%;
+}
+
+.Menu {
+  color : #a3a4a5;
+  margin-left: 5%;
+  font-family: Calibri;
+}
+
+.Menu:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  .Menu {
+    font-size: 0.3em;
+  }
+}
+
+#titleMenu {
+  color : #a3a4a5;
+  margin-left: 5%;
+  font-family: Product Sans;
+}
+
+.explanations {
+  width: 80%;
+  background-color: #00010d;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.content {
+  display: flex;
+}
+
+#horizontalLine {
+  border-top: 1px solid white;
+  border-bottom: 0px;
+  width: 80%;
+  align-items: left;
+}
+
+#MercuryFlight1, #MercuryFlight2, #MercuryFlight3, #MercuryFlight4, #MercuryFlight5, #MercuryFlight6 {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.MissionName {
+  margin-left: 20px;
+  color : #9d9d9d;
+  font-family: Product Sans;
+  font-weight: lighter;
+  margin-top: 70px;
+}
+
+.Missionexplanations {
+  color : white;
+  font-family: Calibri;
+  margin-left: 20px;
+  line-height: 2;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+
+.containerAstronauts {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+.wordAstronaut {
+  color : white;
+  font-family: Calibri;
+  text-align: right;
+}
+
+.astronautPicture {
+  margin-right: 20px;
+}
+
+.tabulation {
+  margin-left: 50px;
+  color : white;
+  font-family: Calibri;
+  line-height: 2;
+  margin-right: 20px;
+}
+
+.additionalPictures {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.safety {
+  color : white;
+  font-family: Calibri;
+  margin-left: 20px;
+  line-height: 2;
+  margin-right: 20px;
+  text-align: justify;
+  width: 50%;
+}
+
+.Safety {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

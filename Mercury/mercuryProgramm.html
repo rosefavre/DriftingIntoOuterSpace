@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="StyleMercuryProgram.css">
+    <title>Mercury Program</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../burgermenu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="Panel">
+      <header class="MercuryPanel">
+        <h1 id="titleMercury">Mercury Program</h1>
+        <br>
+        <h3 id="MercuryDates">1958 - 1963</h3>
+        <div class="emptySpace">
+        </div>
+        <div class="containerTellMeMore">
+          <button id="TellMeMore" type="button" name="TellMeMore" onclick="goToDiv('#beginning')">Tell me more</button>
+        </div>
+      </header>
+    </div>
+
+    <div id="beginning">
+      <div class="nav-wrapper">
+      <nav>
+        <div class="navigation">
+          <ul class="nav-items">
+            <li><a href="../Homepage/projectB.html" >Home</a></li>
+            <li id="gemini"><a>Gemini</a></li>
+            <li><a href="../Apollo/apolloProgram.html" >Apollo</a></li>
+            <li><a href="../Photo Gallery/galeriePhoto.html" >Photo gallery</a></li>
+          </ul>
+          <div class="nav-toogler"></div>
+        </div>
+      </nav>
+    </div>
+
+    <div id="menuderoulant">
+      <ul>
+          <a href="../Gemini/geminiProgramm.html"><li>Gemini</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationLeft')" ><li>Objectives</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationRight')"><li>Spacecraft</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationLeft1')"><li>Spacesuit</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationRight1')"><li>Gemini 3-4</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationLeft2')"><li>Gemini 5</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationRight2')"><li>Gemini 6-7</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationLeft3')"><li>Gemini 8-9-10</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationRight3')"><li>Gemini 11-12</li></a>
+      </ul>
+    </div>
+
+    </div>
+
+
+
+    <div class="content">
+
+
+      <div class="containerMenu">
+          <br> <br>
+          <h2 id="titleMenu">Menu</h2>
+          <p class="Menu" onclick="goToDiv('#BigTitles')">Objectives</p>
+          <p class="Menu" onclick="goToDiv('#Spacecraft')">Spacecraft used for the project</p>
+          <p class="Menu" onclick="goToDiv('#MercuryFlight1')">1st flight : Mercury-Redstone 3</p>
+          <p class="Menu" onclick="goToDiv('#MercuryFlight2')">2nd flight : Mercury-Redstone 4</p>
+          <p class="Menu" onclick="goToDiv('#MercuryFlight3')">3rd flight : Mercury-Atlas 6</p>
+          <p class="Menu" onclick="goToDiv('#MercuryFlight4')">4th flight : Mercury-Atlas 7</p>
+          <p class="Menu" onclick="goToDiv('#MercuryFlight5')">5th flight : Mercury-Atlas 8</p>
+          <p class="Menu" onclick="goToDiv('#MercuryFlight6')">6th flight : Mercury-Atlas 9</p>
+          <p class="Menu" onclick="goToDiv('#AstronautSafety')">Ensure astronauts' safety</p>
+      </div>
+
+      <div class="verticalLine"></div>
+
+      <div class="explanations">
+
+
+        <section class="containerIntroductionSentance">
+          <br> <br>
+          <h2 id="BigTitles">Objectives</h2>
+          <p id="introductionSentance">Mercury Program was the first step in the human space race for the NASA. <br>The goal of this program was to send american astronauts in the space, in orbit around the earth, and make them back to earth...alive ! <br>The research for the project began in 1958, and the first flight took place in 1961. In total, six space flights have been done for the Mercury Program.</p>
+        </section>
+
+        <br>
+        <hr id="horizontalLine">
+        <br>
+
+        <div id="Spacecraft">
+          <h2 class="BigTitles">Spacecraft used for the project</h2>
+          <div class="capsule">
+            <p class="capsuleContent">The Mercury spacecraft was designed for this project. <br> It was a small capsule with room for one astronaut. <br>The astronaut stayed in his seat during the flight.</p>
+            <img id="capsuleimage" src="capsuleMercurySansContour.png" alt="Mercury capsule" title="Mercury capsule">
+          </div>
+          <div class="rocketcontainer">
+            <div class="phraserocket">
+              <p id="rocketContent">Two types of rockets were used for Project Mercury.</p>
+            </div>
+            <div class="imagesrockets">
+              <div class="redstone">
+                <img id="RedstoneRocket" src="RedstoneRocket.jpg" alt="Redstone Rocket" title="Redstone Rocket">
+                <figcaption class="PictureCaption"><a class="clickableCaption" href="https://www.nasa.gov/centers/marshall/history/mercury-redstone.html" target="_blank">Redstone Rocket</a> <br> used for the two first missions </figcaption>
+              </div>
+              <div class="atlas">
+                <img id="AtlasRocket" src="AtlasRocketjpg.jpg" alt="Atlas Rocket" title="Atlas Rocket">
+                <figcaption class="PictureCaption"> <a class="clickableCaption" href="https://historicspacecraft.com/Rockets_Atlas.html" target="_blank">Atlas Rocket</a> <br>used for the four other missions </figcaption>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+        <div class="Missions">
+
+          <h2 class="BigTitles">Missions</h2>
+          <br> <br>
+
+          <div id="MercuryFlight1">
+            <h3 class="MissionName">Mercury Redstone 3 - Mercury Flight 1</h3>
+            <p class="Missionexplanations">Mercury-Redstone 3 is the first american manned spatial flight. It took place on May, the 5th of year 1961, in a Redstone type of rocket, from the 5th launching complex in Cap Canaveral, in Florida. <br>
+            The goal of the spacecraft, named <em>Freedom 7</em>, was to realize a <a class="clickableCaption" href="https://en.wikipedia.org/wiki/Sub-orbital_spaceflight" target="_blank">suborbital flight</a> in 15 minutes of time, going to 187m of altitude. <br>
+            Unlike Youri Gagarine, first man to go to space, the flight was not orbital around the eart, but it was a <a class="clickableCaption" href="https://www.dictionary.com/browse/ballistic-trajectory" target="_blank">ballistic path</a>. A less powerful launcher was necessary. However, it was the first flight for which the spacecraft came back in security on earth, whereas Gagarine had to parachute jump.</p>
+            <div class="containerAstronauts">
+              <div class="wordAstronaut">
+                <p>ASTRONAUT :</p>
+              </div>
+              <div class="astronautPicture">
+                <img src="alanshepard.png" alt="alanshepard" title="Alan Shepard" width="350px" >
+              </div>
+            </div>
+          </div>
+
+          <div id="MercuryFlight2">
+            <h3 class="MissionName">Mercury Redstone 4 - Mercury Flight 2</h3>
+            <p class="Missionexplanations">On July, 21st of year 1961, a second suborbital flight has been made from the same place as the first one, from the 5th launching complex in Cap Canaveral, in Florida. <br>
+            As for the first flight, the goal was to send a man in the space and make him back to earth in security, on board of his spacecraft. <br>
+            This time, the capsule <em>Liberty Bell 7</em> reached the altitude of 190 km for a flight lasting 15 min. It has been launched by a Restone-type rocket. <br>
+            The capsule landed in the Pacific ocean.<br>
+            <em>Liberty Bell 7</em> was evoluated compared to <em>Freedom 7</em> from the first mission. Indeed, Mercury Redstone 4 provided a security system which allowed the astronaut to evacuate very quickly the capsule in case of emergency.<br>
+            But this system made an unexpectied problem during the splashdown, because it opened itself. Water came in the capsule quickly, forcing Virgil Grissom to escape as fast as possible. The astronaut has finally been saved, and <em>Liberty Bell 7</em> sank.</p>
+            <div class="containerAstronauts">
+              <div class="wordAstronaut">
+              <p>ASTRONAUT :</p>
+              </div>
+              <div class="astronautPicture">
+                <img src="virgilgrissom.png" alt="virgilgrissom" title="Virgil Grissom" width="290px">
+              </div>
+            </div>
+          </div>
+
+          <div id="MercuryFlight3">
+            <h3 class="MissionName">Mercury Atlas 6 - Mercury Flight 3</h3>
+            <p class="Missionexplanations">For the first time in the american spacecraft, the mission objective was to place a man into Earth orbit, observe his reactions to the space environment and safely return him to Earth to a point where he could be readily found. The Mercury flight plan during the first orbit was to maintain optimum spacecraft attitude for radar tracking and communication checks.<br>
+            The launch took place on February, 20th of year 1962, with a Atlas-type rocket, from Cape Canaveral Launch Complex 14.<br>
+            During the flight only two major problems were encountered: </p>
+            <p class="tabulation">1. A yaw attitude control jet apparently clogged at the end of the first orbit, forcing the astronaut to abandon the automatic control system for the manual-electrical fly-by-wire system; <br>2. A faulty switch in the heat shield circuit indicated that the clamp holding the shield had been prematurely released - a signal later found to be false. During reentry, however, the retropack was not jettisoned but retained as a safety measure to hold the heat shield in place in the event it had loosened.</p>
+            <p class="Missionexplanations">The mission was successful. The first American in orbit. Total time weightless was 4 hours, 48 minutes, 27 seconds.</p>
+            <div class="containerAstronauts">
+              <div class="wordAstronaut">
+                <p>ASTRONAUT :</p>
+              </div>
+              <div class="astronautPicture">
+                <img src="johnglenn.png" alt="johnglenn" title="John Glenn" width="290px">
+              </div>
+            </div>
+          </div>
+
+          <div id="MercuryFlight4">
+            <h3 class="MissionName">Mercury Atlas 7 - Mercury Flight 4</h3>
+            <p class="Missionexplanations">On May, 24th of 1962, the fourth flight of Mercury Program occured with the aim of doing 3 orbits of the earth. It was a complete success, and it's also the first time scientists tested liquid's behavior on weightlessness. The flight lasted 4 hours and 56 minutes, including an orbit period of 88 minutes, at the altitude of 259 km. The capsule was named <em>Aurora 7</em>. <br></p>
+            <div class="additionalPictures">
+              <div class="orbitPath">
+                <img class="Missionexplanations" src="Orbit_of_aurora7.jpg" alt="orbitOfAurora7" title="Orbit of Aurora 7" width="500px">
+                <figcaption class="PictureCaption">Aurora 7's three orbit paths</figcaption>
+              </div>
+              <div class="CapsuleAstronaut">
+                <img src="Carpenter_entering_aurora_7.jpg" alt="carpenteraurora7" title="Carpenter in Aurora 7" width="250px">
+                <figcaption class="PictureCaption">Astronaut Malcom Scott Carpenter entering Aurora 7</figcaption>
+              </div>
+            </div>
+            <div class="containerAstronauts">
+              <div class="wordAstronaut">
+                <p>ASTRONAUT :</p>
+              </div>
+              <div class="astronautPicture">
+                <img src="malcomscottcarpenter.png" alt="malcomscottcarpenter" title="Malcom Scott Carpenter" width="290px">
+              </div>
+            </div>
+          </div>
+
+          <div id="MercuryFlight5">
+            <h3 class="MissionName">Mercury Atlas 8 - Mercury Flight 5</h3>
+            <p class="Missionexplanations">Focusing on engineering tests rather than on scientific experiments, <em>Sigma 7</em> launched on board of Atlas LV-3B 113-D the 3rd of October 1962 to realize a 6 orbital flight. It confirmed the Mercury's spacecraft durability.<br>A series of minor booster problems during launch and a faulty temperature controller in Schirra's pressure suit were the only technical problems noted during the flight. The spacecraft orbited in both automated and passive flight modes for prolonged periods while the pilot monitored it and carried out some minor scientific experiments. After six orbits, the capsule landed in the Pacific Ocean half a mile from the recovery carrier, and was hoisted aboard for Schirra to disembark. The mission lasted in total 9 hours and 13 minutes, with an orbit rotation of 88 minutes and a highest altitude of 285km. </p>
+            <div class="containerAstronauts">
+              <div class="wordAstronaut">
+                <p>ASTRONAUT :</p>
+              </div>
+              <div class="astronautPicture">
+                <img src="..\Gemini\walterschirra.png" alt="walterschirra" title="Walter Schirra" width="290px">
+              </div>
+            </div>
+          </div>
+
+          <div id="MercuryFlight6">
+            <h3 class="MissionName">Mercury Atlas 9 - Mercury Flight 6</h3>
+            <p class="Missionexplanations">In order to finish Mercury Program and validate human's capacity to stay in orbit around earth, NASA started, on May, 15th of 1963, the last Mercury mission. The astronaut Gordon Cooper, on board of <em>Faith 7</em>, completed 22 Earth orbits in 34 hours and 19 minutes, flying at 265km maximum altitude. <br>Gordon knew some technical problems during this flight : On the 19th orbit, the first sign of trouble appeared when the spacecraft 0.05 g (0.5 m/s²) light came on. However, this turned out to be a faulty indicator, and the spacecraft was not reentering. On the 20th orbit, Cooper lost all attitude readings. The 21st orbit saw a short-circuit occur in the bus bar serving the 250 volt main inverter. This left the automatic stabilization and control system without electric power. <br> This mission marks the last time an American was launched alone to conduct an entirely solo orbital mission. </p>
+          </div>
+          <div class="containerAstronauts">
+            <div class="wordAstronaut">
+              <p>ASTRONAUT :</p>
+            </div>
+            <div class="astronautPicture">
+              <img src="..\Gemini\gordoncooper.png" alt="gordoncooper" title="Gordon Cooper" width="290px">
+            </div>
+          </div>
+        </div>
+
+        <div id="AstronautSafety">
+          <h2 class="BigTitles">Ensure astronaut's safety</h2>
+          <h3 class="MissionName">First tests</h3>
+          <div class="Safety">
+            <p class="safety">Before astronauts flew in Project Mercury, NASA conducted several test flights. These launches did not have people aboard. The test flights helped NASA find and fix problems.
+              The first Atlas rocket launched with a Mercury capsule exploded. The first Mercury-Redstone launch only went about four inches off the ground. From these flights, NASA learned how to fix the rockets and make them safer.
+              Three other "astronauts" also helped make sure Mercury was safer. A rhesus monkey, Sam, and two chimpanzees, Ham and Enos, flew in Mercury capsules. Sam and Ham made suborbital flights. Sam flew on a "Little Joe" rocket. Ham flew on a Redstone rocket. Enos launched on an Atlas rocket. He made two orbits around Earth. Since all three primates made it home safely, NASA knew it was safe for astronauts.</p>
+              <img src="chimpanzee.jpg" alt="chimpanzee" title="Ham the chimpanzee" width="400px" height="auto">
+          </div>
+          <p class="Missionexplanations">This was supported by a series of biomedical measurements on each astronaut before, during (when feasible), and after flight to document the effects of exposure to the spaceflight environment.</p>
+          <br> <br>
+        </div>
+
+      </div>
+
+      </div>
+
+    </div>
+
+
+<script src="JSMercuryProgram.js"> </script>
+
+  </body>
+</html>

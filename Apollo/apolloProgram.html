@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="StyleApolloProgram.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../burgermenu2.css">
+    <title>Apollo Program</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  </head>
+
+  <body>
+
+    <div class="Panel">
+      <header class="ApolloPanel">
+        <h1 id="titleApollo">Apollo Program</h1>
+        <br>
+        <h3 id="ApolloDates">1966 - 1969</h3>
+        <div class="emptySpace">
+        </div>
+        <div class="containerTellMeMore">
+          <button id="TellMeMore" type="button" name="TellMeMore" onclick="goToDiv('#background')">Tell me more</button>
+        </div>
+      </header>
+    </div>
+
+    <div class="nav-wrapper">
+    <nav>
+      <div class="navigation">
+        <ul class="nav-items">
+          <li><a href="../Homepage/projectB.html" >Home</a></li>
+          <li><a href="../Mercury/mercuryProgramm.html" >Mercury</a></li>
+          <li id="gemini"><a>Gemini</a></li>
+          <li><a href="../Photo Gallery/galeriePhoto.html" >Photo gallery</a></li>
+        </ul>
+        <div class="nav-toogler"></div>
+      </div>
+    </nav>
+  </div>
+  </div>
+
+  <div id="menuderoulant">
+    <ul>
+        <a href="../Gemini/geminiProgramm.html"><li>Gemini</li></a>
+        <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationLeft')" ><li>Objectives</li></a>
+        <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationRight')"><li>Spacecraft</li></a>
+        <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationLeft1')"><li>Spacesuit</li></a>
+        <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationRight1')"><li>Gemini 3-4</li></a>
+        <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationLeft2')"><li>Gemini 5</li></a>
+        <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationRight2')"><li>Gemini 6-7</li></a>
+        <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationLeft3')"><li>Gemini 8-9-10</li></a>
+        <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationRight3')"><li>Gemini 11-12</li></a>
+    </ul>
+  </div>
+
+      <div id="background">
+
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="apollo9" onclick="makeExplanationAppear('expApollo9')">
+            <img src="./icon/apollo9.svg" alt="apollo9" title="Apollo 9" width="60px">
+          </div>
+          <div id="expApollo9">
+            <div class="all">
+              <h2 class="BigTitle">Apollo 9</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expApollo9')">
+                <p>Close</p>
+              </div>
+              <div class="inside">
+                <p class="text">Apollo 9 mission, which carried for the first time all elements intended for landing on the moon, was essentially supposed to test all procedures implying lunar module. During 10 days, from March, 3rd of 1969, Saturn V flew on low Earth orbit, and the astronauts had to stow and detach lunar module, what they will have to do to land on the moon and go back to Earth. Apollo 9 confirmed the technology developped for the program was ready for the mission. Lunar module has been named <em>Spider</em> and the command module <em>Gumdrop</em>.  Some extra vehicular exit were made by the astronauts to get sure that a lunar exist will be possible. </p>
+                <div class="images">
+                  <img src="jamesMcDivitt.png" alt="jamesMcDivitt" title="James McDivitt" width="120px">
+                  <img src="davidscott.png" alt="davidscott" title="David Scott" width="120px">
+                  <img src="russellschweickart.png" alt="russellschweickart" title="Russell Schweickart" width="120px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="apollo12" onclick="makeExplanationAppear('expApollo12')">
+            <img src="./icon/apollo12.svg" alt="apollo12" title="Apollo 12" width="60px">
+          </div>
+          <div id="expApollo12">
+            <div class="all">
+              <h2 class="BigTitle">Apollo Flight 12</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expApollo12')">
+                <p>Close</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="rocket" onclick="makeExplanationAppear('expRocket')">
+            <img src="./icon/rocket.svg" alt="spacecraft" title="Spacecrafts" width="60px">
+          </div>
+          <div id="expRocket">
+            <div class="all">
+              <h2 class="BigTitle">Spacecrafts</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expRocket')">
+                <p>Close</p>
+              </div>
+              <div class="inside">
+                <p class="text">NASA designed the Apollo Command Module for this program. It was a capsule with room for three astronauts. The astronauts rode in the Command Module on the way to the moon and back. It was larger than the spacecraft used in the Mercury and Gemini programs. The astronauts had room to move around inside the spacecraft.
+                  Another spacecraft, the Lunar Module, was used for landing on the moon. This spacecraft carried astronauts from orbit around the moon to the moon's surface, then back into orbit. It could carry two astronauts.
+                  Two types of rockets were used for the Apollo program. The first flights used the smaller Saturn I (1) B rocket. It was about as tall as a 22-story building. This rocket had two stages. When the first part ran out of fuel, it dropped away from the other and burned up in Earth's atmosphere. The second part continued flying. The Saturn IB rocket was used to test the new Apollo capsule in Earth orbit.
+                  The other flights used the more powerful Saturn V (5) rocket. This three-stage rocket sent the Apollo spacecraft to the moon. It was about as tall as a 36-story building.</p>
+                <div class="images">
+                  <div class="modules">
+                    <img src="commandmodule.png" alt="commandmodule" title="Command module" width="120px" >
+                    <img src="lunarmodule.jpg" alt="lunarmodule" title="Lunar module" width="120px" >
+                  </div>
+                  <div class="saturn">
+                    <img src="saturn5.jpg" alt="saturn5" title="Saturn V" width="100px">
+                    <img src="saturn1B.jpg" alt="saturn1B" title="Saturn IB" width="120px">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="objectives" onclick="makeExplanationAppear('expObjectives')">
+            <img src="./icon/objectives.svg" alt="objectives" title="Objectives" width="60px"></button>
+          </div>
+          <div id="expObjectives">
+            <div class="all">
+              <h2 class="BigTitle">Objectives</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expObjectives')">
+                <p>Close</p>
+              </div>
+              <div class="inside">
+                <p class="text">For the last straight line before landing man on the moon, NASA setted up the Apollo Program, which aimed to fix the path until the moon, do some moon orbits and achieve the spacecraft's landing on the moon.</p>
+                <img src="apollo.png" alt="apollo" width="250px">
+              </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="apollo15" onclick="makeExplanationAppear('expApollo15')">
+            <img src="./icon/apollo15.svg" alt="apollo15" title="Apollo 15" width="60px">
+          </div>
+          <div id="expApollo15">
+            <div class="all">
+              <h2 class="BigTitle">Apollo 15</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expApollo15')">
+                <p>Close</p>
+              </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="apollo13" onclick="makeExplanationAppear('expApollo13')">
+            <img src="./icon/apollo13.png" alt="apollo13" title="Apollo 13" width="60px">
+          </div>
+          <div id="expApollo13">
+            <div class="all">
+                <h2 class="BigTitle">Apollo 13</h2>
+                <div class="closeWindow" onclick="makeExplanationDisappear('expApollo13')">
+                  <p>Close</p>
+                </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="apollo11" onclick="makeExplanationAppear('expApollo11')">
+            <img src="./icon/apollo11.svg" alt="apollo11" title="Apollo 11" width="60px">
+          </div>
+          <div id="expApollo11">
+            <div class="all">
+              <h2 class="BigTitle">Apollo 11</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expApollo11')">
+                <p>Close</p>
+              </div>
+              <div class="videoapollo11">
+                <video controls width="300px" style="margin-bottom:15px">
+                    <source src="./50th-anniversary-of-the-moon-landing.mp4" >
+                </video>
+                <p style="margin-top:0px" >Source : <a href="https://youtu.be/uzbquKCqEQY" target="_blank">https://youtu.be/uzbquKCqEQY</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="apollo14" onclick="makeExplanationAppear('expApollo14')">
+            <img src="./icon/apollo14.svg" alt="apollo14" title="Apollo 14" width="60px">
+          </div>
+          <div id="expApollo14">
+            <div class="all">
+              <h2 class="BigTitle">Apollo 14</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expApollo14')">
+                <p>Close</p>
+              </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="apollo10" onclick="makeExplanationAppear('expApollo10')">
+            <img src="./icon/apollo10.png" alt="apollo10" title="Apollo 10" width="60px">
+          </div>
+          <div id="expApollo10">
+            <div class="all">
+              <h2 class="BigTitle">Apollo 10</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expApollo10')">
+                <p>Close</p>
+              </div>
+              <div class="inside">
+                <p class="text">Last mission before set foot on the moon, Apollo 10 consisted in a last repetition in testing ascending and descending lunar orbit for lunar module. It was the second time a spacecraft approached the moon, after Apollo 8. It was also a last checking of procedures between lunar module and command module. That's how, on May, 18th of 1969, Saturn V took off for the last mission before the ultimate objective. <br>Once Apollo 10 was in orbit around the moon, in circular orbit at 110km of altitude, Stafford and Cernan went into the lunar module to realize a moon landing simulation. Lunar module is composed of one descent floor and one rising floor. Descent last around one hour, and then begin ascendant phase. Lunar module is placed on a particular orbit, that will allow the meeting with the command module. The meeting went perfectly, and the spacecraft came back on Earth after around 192 hours of mission. </p>
+                <div class="images2">
+                  <div class="images">
+                    <img src="eugenecernan.png" alt="eugenecernan" title="Eugene Cernan" width="120px">
+                    <img src="thomasstafford.png" alt="thomasstafford" title="Thomas Stafford" width="120px">
+                    <img src="johnyoung.png" alt="johnyoung" title="John Young" width="120px">
+                  </div>
+                  <div class="images">
+                    <img src="Apollo_10_Lunar_Module.jpg" alt="lunarmodule" title="Lunar module in descendant orbit" width="150px">
+                    <img src="apollo10_moonorbit.jpg" alt="moon orbit" title="Moon orbit" width="150px">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="apollo8" onclick="makeExplanationAppear('expApollo8')">
+            <img src="./icon/apollo8.png" alt="apollo8" title="Apollo 8" width="60px">
+          </div>
+          <div id="expApollo8">
+            <div class="all">
+              <h2 class="BigTitle">Apollo 8</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expApollo8')">
+                <p>Close</p>
+              </div>
+              <div class="inside">
+                <p class="text">Apollo 8 is today in the shadow of Apollo 11, but it has been a real success and a revolution in the space race, given that it was : <br>• The first leaving of Earth orbit by men <br>• The first entire vision of Earth by men <br>• First orbit around another star (moon) <br>• First vision of moon's hidden side by men <br>• First vision of a Earth-rise by men. <br>It was the first time Saturn V was used. The launch took place on December, 21st of 1968. </p>
+                <div class="images2">
+                  <div class="saturn">
+                    <img src="williamanders.png" alt="williamanders" title="William Anders" width="120px">
+                    <img src="frankborman.png" alt="frankborman" title="Frank Borman" width="120px">
+                    <img src="jimlovell.png" alt="jimlovell" title="Jim Lovell" width="120px">
+                  </div>
+                  <div class="images">
+                    <img src="firstEarthRise.jpg" alt="firstEarthRise" title="First Earth Rise photographed by humans" width="190px">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="apollo16" onclick="makeExplanationAppear('expApollo16')">
+            <img src="./icon/apollo16.png" alt="apollo16" title="Apollo 16" width="60px">
+          </div>
+          <div id="expApollo16">
+            <div class="all">
+              <h2 class="BigTitle">Apollo 16</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expApollo16')">
+                <p>Close</p>
+              </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="apollo7" onclick="makeExplanationAppear('expApollo7')">
+            <img src="./icon/apollo7.png" alt="apollo7" title="Apollo 7" width="60px">
+          </div>
+          <div id="expApollo7">
+            <div class="all">
+              <h2 class="BigTitle">Apollo 7</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expApollo7')">
+                <p>Close</p>
+              </div>
+              <div class="inside">
+                <p class="text">Apollo 7 was the first mission of Apollo Program. Its aim was to test the new spacecraft that will be used for this program. It has been launch by the Saturn IB rocket. It was the first time that three men were sent to space, and also the first time some images were diffused on TV.  <br>One of the main goal of this mission was to test the stowage procedure with the lunar module. Given Saturn IB didn't carry the lunar module, astronauts tested it with the upper floor of the rocket. They also tested the engine that would be supposed to allow to leave moon orbit for the next missions. The engine was switched on 8 times, and everything worked perfectly. </p>
+                <div class="images2">
+                  <div class="saturn">
+                      <img src="walterschirra.png" alt="walterschirra" title="Walter Schirra" width="120px">
+                      <img src="donneisele.png" alt="donneisele" title="Donn Eisele" width="120px">
+                      <img src="waltercunningham.png" alt="waltercunningham" title="Walter Cunningham" width="120px">
+                  </div>
+                  <img src="2emeEtageSaturnIB.jpg" alt="saturnIB" title="2nd floor of Saturn IB" width="170px" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="astronautTraining" onclick="makeExplanationAppear('expAstronautTraining')">
+            <img src="./icon/astronautTraining.svg" alt="astronautTraining" title="Astronaut Training" width="60px">
+          </div>
+          <div id="expAstronautTraining">
+            <div class="all">
+              <h2 class="BigTitle">Astronauts Training</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expAstronautTraining')">
+                <p>Close</p>
+              </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+        <div class="row">
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div id="apollo17" onclick="makeExplanationAppear('expApollo17')">
+            <img src="./icon/apollo17.png" alt="apollo17" title="Apollo 17" width="60px">
+          </div>
+          <div id="expApollo17">
+            <div class="all">
+              <h2 class="BigTitle">Apollo 17</h2>
+              <div class="closeWindow" onclick="makeExplanationDisappear('expApollo17')">
+                <p>Close</p>
+              </div>
+            </div>
+          </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+          <div class="emptycase"> </div>
+        </div>
+
+
+      </div>
+
+<script src="JSApollo.js"></script>
+
+  </body>
+</html>

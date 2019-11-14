@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Calibri";
+  src: url('../font/Calibri Regular.ttf');
+}
+
+@font-face {
+  font-family: "Calibri";
+  font-weight: bold;
+  src: url('../font/Calibri Bold.TTF');
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url('../font/ProductSans-Regular.ttf');
+}
+
+
+#header {
+  background-image: url("Sol-Lune.jpeg");
+  background-repeat: no-repeat;
+  background-position:center  ;
+  width: 100%;
+  height: 370px;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+#body {
+  margin : 0;
+}
+
+#allowHuman {
+  text-align: center;
+  color : #860038;
+}
+
+
+.welcome {
+  z-index:2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+
+
+h1 {
+  color : white;
+  font-family: Product Sans;
+  font-size:3.5em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+
+#famousQuote {
+  font-family: 'Lobster', cursive;
+  color: white;
+/*  position: absolute;*/
+  font-size:1.4em;
+  text-align: center;
+  /*width: 800px;
+  left: 92px;*/
+}
+
+.presentationIcons {
+  width: 160px;
+  height: 160px;
+  align-self: center;
+  padding: 20px;
+}
+
+.myIcons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#introductionSentance {
+  font-family: Calibri;
+  font-size: 18px;
+  text-align: center;
+}
+
+#whatToFind {
+  text-align: center;
+  font-family: Product Sans;
+  color : #860038;
+  font-size: 1.3em;
+}
+
+#titleDiscoverMissions {
+  text-align: center;
+  font-family: Product Sans;
+}
+
+.DiscoverMissions {
+  background-color: #322d36;
+  color : white;
+  width: 100%;
+  min-height: 450px;
+}
+
+.covers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.coverDiscoverMissions {
+  width : 320px;
+  height: 320px;
+  cursor : pointer;
+}
+
+.coverDiscoverMissions :hover {
+  width : 512px;
+  height : 512px;
+}
+
+footer {
+  color : #860038;
+  background-color: white;
+  font-family : Calibri;
+}

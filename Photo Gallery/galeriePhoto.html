@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="StylePhotoGallery.css">
+    <title>Photo gallery</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../lightbox/css/lightbox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <h1>Photo Gallery</h1>
+
+    <div class="nav-wrapper">
+    <nav>
+      <div class="navigation">
+        <ul class="nav-items">
+          <li><a href="../Homepage/projectB.html" >Home</a></li>
+          <li><a href="../Mercury/mercuryProgramm.html" >Mercury</a></li>
+          <li id="gemini"><a>Gemini</a></li>
+          <li><a href="../Apollo/apolloProgram.html" >Apollo</a></li>
+        </ul>
+        <div class="nav-toogler"></div>
+      </div>
+    </nav>
+  </div>
+
+    <div id="menuderoulant">
+      <ul>
+          <a href="../Gemini/geminiProgramm.html"><li>Gemini</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationLeft')" ><li>Objectives</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationRight')"><li>Spacecraft</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationLeft1')"><li>Spacesuit</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationRight1')"><li>Gemini 3-4</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationLeft2')"><li>Gemini 5</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationRight2')"><li>Gemini 6-7</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationLeft3')"><li>Gemini 8-9-10</li></a>
+          <a href="../Gemini/geminiProgramm.html" onclick="localStorage.setItem('div','#iconPresentationRight3')"><li>Gemini 11-12</li></a>
+      </ul>
+    </div>
+
+
+
+    <div class="content">
+
+<!--
+      <div class="rowOfPictures">
+        <img src="moon.jpg" alt="moon" width="250px">
+        <img src="mercuryatlas6.jpg" alt="mercuryatlas6" width="250px">
+        <img src="grissomliberty7.jpg" alt="grissomliberty7" width="250px">
+        <img src="atlasrocket.jpg" alt="AtlasRocket" width="250px">
+        <img src="edwardwhite.jpg" alt="edwardwhite" width="250px">
+      </div>
+      <div class="rowOfPictures">
+        <img src="sallecontrolesmercury.jpg" alt="sallecontrolesmercury" width="250px">
+        <img src="neilarmstrongGemini.jpg" alt="neilarmstrongGemini" width="250px">
+        <img src="MercuryRockets.jpg" alt="MercuryRockets" width="250px">
+        <img src="johnglennfriendship7.jpg" alt="johngleenfriendship7" width="250px">
+        <img src="earthviewfrommoon.jpg" alt="earthviewfrommoon" width="250px">
+      </div>
+      <div class="rowOfPictures">
+        <img src="alanshepard.jpg" alt="alanshepard" width="250px">
+        <img src="apollo11.jpg" alt="apollo11" width="250px">
+        <img src="nasascientists.jpg" alt="nasascientists" width="250px">
+        <img src="edwardwhite2.jpg" alt="edwardwhite2" width="250px">
+        <img src="gemini11.jpg" alt="gemini11" width="250px">
+      </div>
+      <div class="rowOfPictures">
+        <img src="apollo11.2.jpg" alt="apollo11" width="250px">
+        <img src="atlasrocket2.jpg" alt="atlasrocket" width="250px">
+        <img src="steponthemoon.jpg" alt="steponthemoon" width="250px">
+        <img src="astronaut.jpg" alt="astronaut" width="250px">
+        <img src="mercury-7-with-model.jpg" alt="modelmercury7" width="250px">
+      </div>
+      <div class="rowOfPictures">
+        <img src="agenarocket.jpg" alt="agenarocket" width="250px">
+        <img src="spacewalk.jpeg" alt="spacewalk" width="250px">
+        <img src="geminilaunch.jpg" alt="geminilaunch" width="250px">
+        <img src="astronauttrainingapollo.jpg" alt="trainingapollo" width="250px">
+        <img src="jamesmcdivitt.jpg" alt="jamesmcdivitt" width="250px">
+      </div>
+      <div class="rowOfPictures">
+        <img src="gemini11a.jpg" alt="gemini11a" width="250px">
+        <img src="trainingswimmingpool.jpg" alt="trainingswimmingpool" width="250px">
+        <img src="astronautmoon.jpg" alt="astronautmoon" width="250px">
+        <img src="apollorocket.jpg" alt="apollorocket" width="250px">
+        <img src="Gemini_capsule.jpg" alt="Gemini_capsule" width="250px">
+      </div> -->
+
+      <a href="moon.jpg" data-lightbox="roadtrip">
+          <div class="img1"></div>
+      </a>
+
+      <a href="mercuryatlas6.jpg" data-lightbox="roadtrip">
+          <div class="img2"></div>
+      </a>
+
+      <a href="grissomliberty7.jpg" data-lightbox="roadtrip">
+          <div class="img3"></div>
+      </a>
+
+      <a href="atlasrocket.jpg" data-lightbox="roadtrip">
+          <div class="img4"></div>
+      </a>
+
+      <a href="edwardwhite.jpg" data-lightbox="roadtrip">
+          <div class="img5"></div>
+      </a>
+
+      <a href="sallecontrolesmercury.jpg" data-lightbox="roadtrip">
+          <div class="img6"></div>
+      </a>
+
+      <a href="neilarmstrongGemini.jpg" data-lightbox="roadtrip">
+          <div class="img7"></div>
+      </a>
+
+      <a href="MercuryRockets.jpg" data-lightbox="roadtrip">
+          <div class="img8"></div>
+      </a>
+
+      <a href="johnglennfriendship7.jpg" data-lightbox="roadtrip">
+          <div class="img9"></div>
+      </a>
+
+      <a href="earthviewfrommoon.jpg" data-lightbox="roadtrip">
+          <div class="img10"></div>
+      </a>
+
+      <a href="alanshepard.jpg" data-lightbox="roadtrip">
+          <div class="img11"></div>
+      </a>
+
+      <a href="apollo11.jpg" data-lightbox="roadtrip">
+          <div class="img12"></div>
+      </a>
+
+      <a href="nasascientists.jpg" data-lightbox="roadtrip">
+          <div class="img13"></div>
+      </a>
+
+      <a href="edwardwhite2.jpg" data-lightbox="roadtrip">
+          <div class="img14"></div>
+      </a>
+
+      <a href="gemini11.jpg" data-lightbox="roadtrip">
+          <div class="img15"></div>
+      </a>
+
+      <a href="apollo11.2.jpg" data-lightbox="roadtrip">
+          <div class="img16"></div>
+      </a>
+
+      <a href="atlasrocket2.jpg" data-lightbox="roadtrip">
+          <div class="img17"></div>
+      </a>
+
+      <a href="steponthemoon.jpg" data-lightbox="roadtrip">
+          <div class="img18"></div>
+      </a>
+
+      <a href="astronaut.jpg" data-lightbox="roadtrip">
+          <div class="img19"></div>
+      </a>
+
+      <a href="mercury-7-with-model.jpg" data-lightbox="roadtrip">
+          <div class="img20"></div>
+      </a>
+
+    </div>
+
+    <footer>
+
+          <div class="emptyspace">  </div>
+
+          <div class="userinput">
+            <h2>Subscribe to our newsletter !</h2>
+            <p class="newsletter">If you want to get more informations about NASA current programs and objecives, you can subscribe to our newsletter to follow NASA topicality ! </p>
+            <form class="input" action="index.html" method="post">
+              <h4 class="userinformation">Frist name</h4>
+              <input type="inputName" name="firstName" value="" >
+              <h4 class="userinformation">Last name</h4>
+              <input type="inputName" name="lastName" value="" >
+              <h4 class="userinformation">Email address</h4>
+              <input type="inputName" name="email" value="" >
+              <button id="button" type="submit" name="button" onclick="checkItemNotNull()">Send my informations</button>
+            </form>
+          </div>
+
+          <div class="nextNasaLaunch">
+            <p id="demo"></p>
+            <p id="demo2">before next NASA rocket launch</p>
+          </div>
+
+    </footer>
+
+      <script src="JSgallery.js">  </script>
+      <script src="../lightbox/js/lightbox.js"></script>
+      <script src="../lightbox/js/lightboxOption.js"></script>
+
+  </body>
+</html>
