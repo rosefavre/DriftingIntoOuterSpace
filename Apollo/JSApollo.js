@@ -16,10 +16,16 @@ $(document).ready(function(){
 
 function makeExplanationAppear(divName) {
   document.getElementById(divName).style.display = "block";
+  if(divName == "expApollo11") {
+    document.getElementById("videoapollo").play();
+  }
 }
 
 function makeExplanationDisappear(divName) {
   document.getElementById(divName).style.display = "none";
+  if(divName == "expApollo11") {
+      document.getElementById("videoapollo").pause();
+  }
 }
 
 function goToDiv(divID) {

@@ -1,5 +1,5 @@
 
-
+//submenu gemini
 $(document).ready(function(){
 
 
@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 });
 
-
+//counter before next nasa rocket launch
     // Set the date we're counting down to
     var countDownDate = new Date("Feb 5, 2020 11:15:00").getTime();
 
@@ -53,6 +53,8 @@ navToogler.addEventListener('click', function (event) {
   navWrapper.classList.toggle('active');
 });
 
+
+//go to a certain div
 function goToDiv(divID) {
   $('html,body').animate( {
     scrollTop:

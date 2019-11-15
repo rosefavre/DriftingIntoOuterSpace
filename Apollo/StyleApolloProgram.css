@@ -166,9 +166,12 @@ body {
   z-index: 4;
   width: 70vw;
   min-height: 420px;
+  max-height: 90vh;
   margin-left: 15%;
+  top: 10vh;
+  overflow: scroll;
   display: none;
-  position: absolute;
+  position: fixed;
   border-radius: 5px;
   box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.7);
 }
