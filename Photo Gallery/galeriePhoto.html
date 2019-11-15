@@ -177,14 +177,14 @@
           <div class="userinput">
             <h2>Subscribe to our newsletter !</h2>
             <p class="newsletter">If you want to get more informations about NASA current programs and objecives, you can subscribe to our newsletter to follow NASA topicality ! </p>
-            <form class="input" action="index.html" method="post">
+            <form class="inputForm" action="index.html" method="post">
               <h4 class="userinformation">Frist name</h4>
-              <input type="inputName" name="firstName" value="" >
+              <input type="text" name="firstName" value="" required>
               <h4 class="userinformation">Last name</h4>
-              <input type="inputName" name="lastName" value="" >
+              <input type="text" name="lastName" value="" required>
               <h4 class="userinformation">Email address</h4>
-              <input type="inputName" name="email" value="" >
-              <button id="button" type="submit" name="button" onclick="checkItemNotNull()">Send my informations</button>
+              <input type="email" name="email" value="" required >
+              <button id="button" type="submit" name="button">Send my informations</button>
             </form>
           </div>
 
