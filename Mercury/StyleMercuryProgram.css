@@ -103,7 +103,7 @@ body {
   display: none;
   font-family: Calibri;
   cursor: pointer;
-  z-index: 2;
+  z-index: 4;
   position: absolute;
 }
 
