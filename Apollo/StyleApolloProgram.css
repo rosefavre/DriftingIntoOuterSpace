@@ -189,6 +189,7 @@ body {
   text-align: center;
   margin-left: 94%;
   margin-top: 0;
+  margin-right: 15px;
 }
 
 .BigTitle {
@@ -202,6 +203,7 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding: 10px;
 }
 
 .videoapollo11 {

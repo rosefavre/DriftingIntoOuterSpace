@@ -245,6 +245,7 @@ body {
 .containerMenu {
   background-color: #00010d;
   width : 20%;
+  padding: 10px;
 }
 
 .Menu {
