@@ -230,6 +230,11 @@ body {
   color :#9d9d9d;
 }
 
+.clickableCaption:hover {
+  color :#9d9d9d;
+  text-decoration: underline;
+}
+
 #AtlasRocket {
   width : 200px;
   height: auto;
