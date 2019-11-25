@@ -6,6 +6,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../burgermenu2.css">
+      <link rel="stylesheet" href="../lightbox/css/lightbox.css">
     <title>Apollo Program</title>
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
   </head>
@@ -157,9 +158,30 @@
           </div>
           <div id="expApollo12">
             <div class="all">
-              <h2 class="BigTitle">Apollo Flight 12</h2>
+              <h2 class="BigTitle">Apollo 12</h2>
               <div class="closeWindow" onclick="makeExplanationDisappear('expApollo12')">
                 <p>Close</p>
+              </div>
+              <div class="inside">
+                <p class="text">More ambitious despite the smaller budget compared to Apollo 11, Apollo 12 had as a goal to study moon's surface. 3 submissions were assigned to this missions. First was landing on the moon with accuracy to get the probe <em>Surveyor 3</em>, second wad to make for the first time videos of the moon in color, and the last was to deploy a complet set of scientific instrument ASEP : a seismometer, a magnetometer, a spectrometer to detect the composition of solar wind, a super-thermique ion detector, a cold cathodic gauge, and a dust detector. Two spacewalks were scheduled, and the way back to earth included some maneuvers. <br>Unfortunately, when Saturn V was launched, it has been hit by the lightning, which provoked a big loss of electric power. Astronauts finally achieved to fix it, and they have been able to keep doing the mission. During the mission, lots of photos were taken, 34.1kg of moon floor sample were taken, and the astronauts' excursions lasted 7h45 in total, going 470m far away the landing place. In this mission, a lot of modifications were brought to the lunar module compared to Apollo 11, particularly the accuracy of landing. The launch of this mission took place on November, 14th, 1969. </p>
+                <div class="images2">
+                    <div class="images">
+                      <img src="peteconrad.png" alt="peteconrad" title="Pete Conrad" width="120px">
+                      <img src="richardgordon.png" alt="richardgordon" title="Richard Gordon" width="120px">
+                      <img src="alanbean.png" alt="alanbean" title="Alan Bean" width="120px">
+                    </div>
+                    <div class="images">
+                      <a href="surveyor3.jpg" data-lightbox="roadtrip" data-title="Conrad next to Surveyor 3 (we can see lunar module far away)">
+                          <div class="surveyor3"></div>
+                      </a>
+                      <a href="sistometre.jpg" data-lightbox="roadtrip" data-title="Seismometer">
+                          <div class="sistometre"></div>
+                      </a>
+                      <a href="spectrometer.jpg" data-lightbox="roadtrip" data-title = "Spectrometer for detecting solar wind">
+                          <div class="spectrometer"></div>
+                      </a>
+                    </div>
+                </div>
               </div>
             </div>
 
@@ -209,12 +231,20 @@
                   The other flights used the more powerful Saturn V (5) rocket. This three-stage rocket sent the Apollo spacecraft to the moon. It was about as tall as a 36-story building.</p>
                 <div class="images">
                   <div class="modules">
-                    <img src="commandmodule.png" alt="commandmodule" title="Command module" width="120px" >
-                    <img src="lunarmodule.jpg" alt="lunarmodule" title="Lunar module" width="120px" >
+                    <a href="commandmodule.png" data-lightbox="roadtrip" data-title = "Command module">
+                        <div class="commandmodule"></div>
+                    </a>
+                    <a href="lunarmodule.jpg" data-lightbox="roadtrip" data-title = "Lunar module">
+                        <div class="lunarmodule"></div>
+                    </a>
                   </div>
                   <div class="saturn">
-                    <img src="saturn5.jpg" alt="saturn5" title="Saturn V" width="100px">
-                    <img src="saturn1B.jpg" alt="saturn1B" title="Saturn IB" width="120px">
+                    <a href="saturn5.jpg" data-lightbox="roadtrip" data-title = "Saturn V">
+                        <div class="saturn5"></div>
+                    </a>
+                    <a href="saturn1B.jpg" data-lightbox="roadtrip" data-title = "Saturn IB">
+                        <div class="saturn1B"></div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -415,8 +445,12 @@
                     <img src="johnyoung.png" alt="johnyoung" title="John Young" width="120px">
                   </div>
                   <div class="images">
-                    <img src="Apollo_10_Lunar_Module.jpg" alt="lunarmodule" title="Lunar module in descendant orbit" width="150px">
-                    <img src="apollo10_moonorbit.jpg" alt="moon orbit" title="Moon orbit" width="150px">
+                    <a href="Apollo_10_Lunar_Module.jpg" data-lightbox="roadtrip" data-title = "Apollo 10 lunar module in descendant orbit">
+                        <div class="Apollo_10_Lunar_Module"></div>
+                    </a>
+                    <a href="apollo10_moonorbit.jpg" data-lightbox="roadtrip" data-title = "Apollo 10 moon orbit">
+                        <div class="apollo10_moonorbit"></div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -453,7 +487,9 @@
                     <img src="jimlovell.png" alt="jimlovell" title="Jim Lovell" width="120px">
                   </div>
                   <div class="images">
-                    <img src="firstEarthRise.jpg" alt="firstEarthRise" title="First Earth Rise photographed by humans" width="190px">
+                    <a href="firstEarthRise.jpg" data-lightbox="roadtrip" data-title = "First Earth rise photographed by humans">
+                        <div class="firstEarthRise"></div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -527,7 +563,9 @@
                       <img src="donneisele.png" alt="donneisele" title="Donn Eisele" width="120px">
                       <img src="waltercunningham.png" alt="waltercunningham" title="Walter Cunningham" width="120px">
                   </div>
-                  <img src="2emeEtageSaturnIB.jpg" alt="saturnIB" title="2nd floor of Saturn IB" width="170px" >
+                  <a href="2emeEtageSaturnIB.jpg" data-lightbox="roadtrip" data-title = "Second floor of Saturn IB">
+                      <div class="secondEtageSaturnIB"></div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -596,6 +634,8 @@
       </div>
 
 <script src="JSApollo.js"></script>
+<script src="../lightbox/js/lightbox.js"></script>
+<script src="../lightbox/js/lightboxOption.js"></script>
 
   </body>
 </html>

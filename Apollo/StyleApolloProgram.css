@@ -248,3 +248,82 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.surveyor3, .sistometre, .spectrometer, .Apollo_10_Lunar_Module, .apollo10_moonorbit, .firstEarthRise, .secondEtageSaturnIB, .commandmodule, .lunarmodule {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 10px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+}
+
+.saturn5, .saturn1B {
+  width: 100px;
+  height: 350px;
+  overflow: hidden;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 10px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+}
+
+.surveyor3{
+    background-image: url("surveyor3.jpg");
+    background-position: center;
+}
+
+.sistometre{
+    background-image: url("sistometre.jpg");
+    background-position: center;
+}
+
+.spectrometer{
+    background-image: url("spectrometer.jpg");
+    background-position: center;
+}
+
+.Apollo_10_Lunar_Module{
+    background-image: url("Apollo_10_Lunar_Module.jpg");
+    background-position: center;
+}
+
+.apollo10_moonorbit{
+    background-image: url("apollo10_moonorbit.jpg");
+    background-position: center;
+}
+
+.firstEarthRise {
+    background-image: url("firstEarthRise.jpg");
+    background-position: center;
+}
+
+.secondEtageSaturnIB {
+    background-image: url("2emeEtageSaturnIB.jpg");
+    background-position: center;
+}
+
+.lunarmodule {
+    background-image: url("lunarmodule.jpg");
+    background-position: center;
+}
+
+.commandmodule {
+    background-image: url("commandmodule.png");
+    background-position: center;
+}
+
+.saturn5 {
+    background-image: url("saturn5.jpg");
+    background-position: center;
+}
+
+.saturn1B {
+    background-image: url("saturn1B.jpg");
+    background-position: center;
+}
