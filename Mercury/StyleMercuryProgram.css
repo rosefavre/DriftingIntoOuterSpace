@@ -52,6 +52,7 @@ body {
   font-family: Product Sans;
   font-weight: lighter;
   padding-left: 5%;
+  padding-top: 20px;
   margin : 0;
   height: 50%;
 
@@ -159,6 +160,7 @@ body {
   font-family: Product Sans;
   font-weight: lighter;
   font-size: 1.8em;
+  padding-top : 45px
 }
 
 .capsuleContent {
@@ -188,13 +190,6 @@ body {
   /*margin-right: 120px;*/
 }
 
-#rocketContent {
-  color : white;
-  font-family: Calibri;
-  font-size: 1.1em;
-  font-weight: lighter;
-  text-align: center;
-}
 
 .rocketcontainer {
   display: flex;
@@ -203,6 +198,11 @@ body {
 
 .phraserocket {
   flex: 100%;
+  color : white;
+  font-family: Calibri;
+  font-size: 1.1em;
+  font-weight: lighter;
+  text-align: center;
 }
 
 .imagesrockets {
@@ -276,6 +276,13 @@ body {
   font-family: Product Sans;
 }
 
+.followingMenu {
+  position: -webkit-sticky;
+ position: sticky;
+ top: 0;
+ padding-top: 20px;
+}
+
 .explanations {
   width: 80%;
   background-color: #00010d;
@@ -293,6 +300,7 @@ body {
   border-bottom: 0px;
   width: 80%;
   align-items: left;
+  margin-top: 10px;
 }
 
 #MercuryFlight1, #MercuryFlight2, #MercuryFlight3, #MercuryFlight4, #MercuryFlight5, #MercuryFlight6 {
@@ -325,6 +333,7 @@ body {
  align-items: center;
  justify-content: center;
  flex-wrap: wrap;
+ padding-bottom: 30px;
 }
 
 .wordAstronaut {

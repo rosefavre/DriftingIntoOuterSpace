@@ -14,7 +14,6 @@
     <div class="Panel">
       <header class="MercuryPanel">
         <h1 id="titleMercury">Mercury Program</h1>
-        <br>
         <h3 id="MercuryDates">1958 - 1963</h3>
         <div class="emptySpace">
         </div>
@@ -62,16 +61,18 @@
 
       <div class="containerMenu">
           <br> <br>
-          <h2 id="titleMenu">Menu</h2>
-          <p class="Menu" onclick="goToDiv('#BigTitles')">Objectives</p>
-          <p class="Menu" onclick="goToDiv('#Spacecraft')">Spacecraft used for the project</p>
-          <p class="Menu" onclick="goToDiv('#MercuryFlight1')">1st flight : Mercury-Redstone 3</p>
-          <p class="Menu" onclick="goToDiv('#MercuryFlight2')">2nd flight : Mercury-Redstone 4</p>
-          <p class="Menu" onclick="goToDiv('#MercuryFlight3')">3rd flight : Mercury-Atlas 6</p>
-          <p class="Menu" onclick="goToDiv('#MercuryFlight4')">4th flight : Mercury-Atlas 7</p>
-          <p class="Menu" onclick="goToDiv('#MercuryFlight5')">5th flight : Mercury-Atlas 8</p>
-          <p class="Menu" onclick="goToDiv('#MercuryFlight6')">6th flight : Mercury-Atlas 9</p>
-          <p class="Menu" onclick="goToDiv('#AstronautSafety')">Ensure astronauts' safety</p>
+          <div class="followingMenu">
+            <h2 id="titleMenu">Menu</h2>
+            <p class="Menu" onclick="goToDiv('#BigTitles')">Objectives</p>
+            <p class="Menu" onclick="goToDiv('#Spacecraft')">Spacecraft used for the project</p>
+            <p class="Menu" onclick="goToDiv('#MercuryFlight1')">1st flight : Mercury-Redstone 3</p>
+            <p class="Menu" onclick="goToDiv('#MercuryFlight2')">2nd flight : Mercury-Redstone 4</p>
+            <p class="Menu" onclick="goToDiv('#MercuryFlight3')">3rd flight : Mercury-Atlas 6</p>
+            <p class="Menu" onclick="goToDiv('#MercuryFlight4')">4th flight : Mercury-Atlas 7</p>
+            <p class="Menu" onclick="goToDiv('#MercuryFlight5')">5th flight : Mercury-Atlas 8</p>
+            <p class="Menu" onclick="goToDiv('#MercuryFlight6')">6th flight : Mercury-Atlas 9</p>
+            <p class="Menu" onclick="goToDiv('#AstronautSafety')">Ensure astronauts' safety</p>
+          </div>
       </div>
 
       <div class="verticalLine"></div>
@@ -80,14 +81,14 @@
 
 
         <section class="containerIntroductionSentance">
-          <br> <br>
+
           <h2 id="BigTitles">Objectives</h2>
           <p id="introductionSentance">Mercury Program was the first step in the human space race for the NASA. <br>The goal of this program was to send american astronauts in the space, in orbit around the earth, and make them back to earth...alive ! <br>The research for the project began in 1958, and the first flight took place in 1961. In total, six space flights have been done for the Mercury Program.</p>
         </section>
 
-        <br>
+
         <hr id="horizontalLine">
-        <br>
+
 
         <div id="Spacecraft">
           <h2 class="BigTitles">Spacecraft used for the project</h2>
@@ -97,7 +98,7 @@
           </div>
           <div class="rocketcontainer">
             <div class="phraserocket">
-              <p id="rocketContent">Two types of rockets were used for Project Mercury.</p>
+              <p>Two types of rockets were used for Project Mercury.</p>
             </div>
             <div class="imagesrockets">
               <div class="redstone">
@@ -115,10 +116,10 @@
         </div>
 
 
-        <div class="Missions">
 
-          <h2 class="BigTitles">Missions</h2>
-          <br> <br>
+
+          <h2 class="BigTitles" style="padding-bottom : 30px">Missions</h2>
+
 
           <div id="MercuryFlight1">
             <h3 class="MissionName">Mercury Redstone 3 - Mercury Flight 1</h3>
@@ -209,7 +210,6 @@
           <div id="MercuryFlight6">
             <h3 class="MissionName">Mercury Atlas 9 - Mercury Flight 6</h3>
             <p class="Missionexplanations">In order to finish Mercury Program and validate human's capacity to stay in orbit around earth, NASA started, on May, 15th of 1963, the last Mercury mission. The astronaut Gordon Cooper, on board of <em>Faith 7</em>, completed 22 Earth orbits in 34 hours and 19 minutes, flying at 265km maximum altitude. <br>Gordon knew some technical problems during this flight : On the 19th orbit, the first sign of trouble appeared when the spacecraft 0.05 g (0.5 m/s²) light came on. However, this turned out to be a faulty indicator, and the spacecraft was not reentering. On the 20th orbit, Cooper lost all attitude readings. The 21st orbit saw a short-circuit occur in the bus bar serving the 250 volt main inverter. This left the automatic stabilization and control system without electric power. <br> This mission marks the last time an American was launched alone to conduct an entirely solo orbital mission. </p>
-          </div>
           <div class="containerAstronauts">
             <div class="wordAstronaut">
               <p>ASTRONAUT :</p>
@@ -218,7 +218,8 @@
               <img src="..\Gemini\gordoncooper.png" alt="gordoncooper" title="Gordon Cooper" width="290px">
             </div>
           </div>
-        </div>
+          </div>
+
 
         <div id="AstronautSafety">
           <h2 class="BigTitles">Ensure astronaut's safety</h2>
@@ -229,7 +230,7 @@
               Three other "astronauts" also helped make sure Mercury was safer. A rhesus monkey, Sam, and two chimpanzees, Ham and Enos, flew in Mercury capsules. Sam and Ham made suborbital flights. Sam flew on a "Little Joe" rocket. Ham flew on a Redstone rocket. Enos launched on an Atlas rocket. He made two orbits around Earth. Since all three primates made it home safely, NASA knew it was safe for astronauts.</p>
               <img src="chimpanzee.jpg" alt="chimpanzee" title="Ham the chimpanzee" width="400px" height="auto">
           </div>
-          <p class="Missionexplanations">This was supported by a series of biomedical measurements on each astronaut before, during (when feasible), and after flight to document the effects of exposure to the spaceflight environment.</p>
+          <p class="Missionexplanations">This was supported by series of biomedical measurements on each astronaut before, during (when feasible), and after flight to document the effects of exposure to the spaceflight environment.</p>
           <br> <br>
         </div>
 

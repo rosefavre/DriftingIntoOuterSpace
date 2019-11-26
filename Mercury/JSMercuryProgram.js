@@ -29,6 +29,7 @@ function goToDiv(divID) {
 }
 
 
+//menu deroulant div Gemini
 $(document).ready(function(){
 
 
